@@ -1,0 +1,20 @@
+meta {
+  name: Symbol Lookup
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://finnhub.io/api/v1/search?q=amd&exchange=US
+  body: none
+  auth: inherit
+}
+
+params:query {
+  q: amd
+  exchange: US
+}
+
+docs {
+  [API docs](https://finnhub.io/docs/api/symbol-search)
+}
