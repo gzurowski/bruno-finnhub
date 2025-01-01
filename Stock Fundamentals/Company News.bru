@@ -1,0 +1,21 @@
+meta {
+  name: Company News
+  type: http
+  seq: 9
+}
+
+get {
+  url: https://finnhub.io/api/v1/company-news?category=general&minId=0
+  body: none
+  auth: inherit
+}
+
+params:query {
+  symbol: AMD
+  from: 2024-12-01
+  to: 2024-12-31
+}
+
+docs {
+  [API docs](https://finnhub.io/docs/api/company-news)
+}
