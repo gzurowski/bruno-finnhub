@@ -1,0 +1,20 @@
+meta {
+  name: Market News
+  type: http
+  seq: 8
+}
+
+get {
+  url: https://finnhub.io/api/v1/news?category=general&minId=0
+  body: none
+  auth: inherit
+}
+
+params:query {
+  category: general
+  minId: 0
+}
+
+docs {
+  [API docs](https://finnhub.io/docs/api/market-news)
+}
