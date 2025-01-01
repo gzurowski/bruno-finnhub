@@ -1,0 +1,19 @@
+meta {
+  name: Company Profile [Premium]
+  type: http
+  seq: 5
+}
+
+get {
+  url: https://finnhub.io/api/v1/stock/profile?symbol=AMD
+  body: none
+  auth: inherit
+}
+
+params:query {
+  symbol: AMD
+}
+
+docs {
+  [API docs](https://finnhub.io/docs/api/company-profile)
+}
