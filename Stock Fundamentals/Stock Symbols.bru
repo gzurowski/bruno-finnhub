@@ -1,0 +1,19 @@
+meta {
+  name: Stock Symbols
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://finnhub.io/api/v1/stock/symbol?exchange=US
+  body: none
+  auth: inherit
+}
+
+params:query {
+  exchange: US
+}
+
+docs {
+  [API docs](https://finnhub.io/docs/api/stock-symbols)
+}
