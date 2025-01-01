@@ -1,0 +1,19 @@
+meta {
+  name: Market Holiday
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://finnhub.io/api/v1/stock/market-holiday?exchange=US
+  body: none
+  auth: inherit
+}
+
+params:query {
+  exchange: US
+}
+
+docs {
+  [API docs](https://finnhub.io/docs/api/market-holiday)
+}
