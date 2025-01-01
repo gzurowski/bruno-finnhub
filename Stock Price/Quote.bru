@@ -1,0 +1,19 @@
+meta {
+  name: Quote
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://finnhub.io/api/v1/quote?symbol=AMD
+  body: none
+  auth: inherit
+}
+
+params:query {
+  symbol: AMD
+}
+
+docs {
+  [API docs](https://finnhub.io/docs/api/quote)
+}
